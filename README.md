@@ -18,9 +18,11 @@ Or install it yourself as:
 
 ## Usage
 
-Write following snipet in your `config/deploy.rb`.
+Configure strategy as `:copy_subidr` and specify your application path in `:deploy_subdir`.
 
+    # in "config/deploy.rb"
     set(:deploy_via, :copy_subdir)
+    set(:deploy_subdir, '/where/your/app/is/in')
 
 ## Contributing
 
