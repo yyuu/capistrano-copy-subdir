@@ -1,5 +1,5 @@
 # -*- encoding: utf-8 -*-
-require File.expand_path('../lib/capistrano-copy-subdir/version', __FILE__)
+require File.expand_path('../lib/capistrano/recipes/deploy/strategy/copy_subdir/version', __FILE__)
 
 Gem::Specification.new do |gem|
   gem.authors       = ["Yamashita Yuu"]
@@ -13,7 +13,7 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.name          = "capistrano-copy-subdir"
   gem.require_paths = ["lib"]
-  gem.version       = Capistrano::CopySubdir::VERSION
+  gem.version       = Capistrano::Deploy::Strategy::CopySubdir::VERSION
 
   gem.add_dependency("capistrano")
 end

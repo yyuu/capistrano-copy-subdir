@@ -7,10 +7,10 @@
 # http://stackoverflow.com/questions/29168/deploying-a-git-subdirectory-in-capistrano
 #
 
-require 'capistrano'
-require 'capistrano/recipes/deploy/strategy/copy'
-require 'capistrano-copy-subdir'
-require 'tmpdir'
+require "capistrano"
+require "capistrano/recipes/deploy/strategy/copy"
+require "capistrano/recipes/deploy/strategy/copy_subdir/version"
+require "tmpdir"
 
 module Capistrano
   module Deploy
