@@ -16,6 +16,7 @@ module Capistrano
   module Deploy
     module Strategy
       class CopySubdir < Copy
+        VERSION = ::Capistrano::Deploy::Strategy::COPY_SUBDIR_VERSION
 
         def deploy!
           update_repository_cache
